@@ -71,7 +71,7 @@ body.sidebar-expanded {
     opacity: 0;
     transition: opacity 1.5s ease;
     z-index: -1;
-    background-image: url("img/henrique.png");
+    background-image: url("img/");
 }
 
 .thumbnail-bg.visible {
