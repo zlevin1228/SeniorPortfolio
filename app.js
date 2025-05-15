@@ -138,3 +138,10 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+document.getElementById('scrollButton').addEventListener('click', function () {
+    const target = document.getElementById('resume');
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
+  });

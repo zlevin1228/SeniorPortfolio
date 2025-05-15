@@ -14,6 +14,8 @@
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" type="text/css" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
 
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -98,104 +100,137 @@
         </ul>
     </div>
 
-    <!-- Content Sections -->
-    <section id="resume" class="content-section">
-        <div class="container">
-            <h2 class="mb-4">Resume</h2>
-            
-            <!-- Education Section -->
-            <div class="resume-section mb-5">
-                <h3 class="mb-4">Education</h3>
-                <div class="card mb-3 shadow-sm resume-card">
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between">
-                            <h4 class="fs-5">University of Maryland</h4>
-                            <span class="text-muted">2025-Present</span>
-                        </div>
-                        <p class="mb-1">Major in Information Science</p>
-                        <p class="text-muted mb-0">High School GPA (Weighted): 4.7</p>
-                        <div class="flip-box justify-content-center text-center align-items-center">
-                            <div class="flip-box-inner">
-                                <div class="flip-box-front">
-                                    <img src="img/umd.png" class="img-fluid">
-                                </div>
-                                <div class="flip-box-back">
-                                    <img src="img/terps.png" class="img-fluid">
-                                </div>
-                              </div>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Experience Section -->
-            <div class="resume-section mb-5">
-                <h3 class="fs-4 mb-4">Experience</h3>
-                <div class="card mb-3 shadow-sm">
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between">
-                            <h4 class="fs-5">Software Developer</h4>
-                            <span class="text-muted">2022 - Present</span>
-                        </div>
-                        <p class="mb-1">Tech Solutions Inc.</p>
-                        <ul class="mt-2">
-                            <li>Developed and maintained web applications using React and Node.js</li>
-                            <li>Collaborated with cross-functional teams to design and implement new features</li>
-                            <li>Optimized existing code to improve performance and reliability</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card mb-3 shadow-sm">
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between">
-                            <h4 class="fs-5">Web Development Intern</h4>
-                            <span class="text-muted">Summer 2021</span>
-                        </div>
-                        <p class="mb-1">Digital Designs Co.</p>
-                        <ul class="mt-2">
-                            <li>Assisted in developing responsive websites for various clients</li>
-                            <li>Created UI components using HTML, CSS, and JavaScript</li>
-                            <li>Participated in code reviews and team meetings</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Skills Section -->
-            <div class="resume-section">
-                <h3 class="fs-4 mb-4">Skills</h3>
-                <div class="card shadow-sm">
-                    <div class="card-body">
-                        <h4 class="fs-5 mb-3">Technical Skills</h4>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <ul>
-                                    <li>HTML, CSS, JavaScript</li>
-                                    <li>React, Vue.js</li>
-                                    <li>Node.js, Express</li>
-                                    <li>SQL, MongoDB</li>
-                                </ul>
+    <!-- Resume Section -->
+<section id="resume" class="content-section py-5 bg-light">
+    <div class="container">
+        <h2 class="mb-5 text-center">Resume</h2>
+        <div class="row">
+            <!-- Left Column: Education & Skills -->
+            <div class="col-lg-5" data-aos="fade-right">
+                <!-- Education -->
+                <div class="resume-section mb-5">
+                    <h3 class="mb-4">Education</h3>
+                    <div class="card shadow-sm rounded-4 p-3">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h4 class="fs-5">University of Maryland</h4>
+                                <span class="text-muted">2025 - Present</span>
                             </div>
-                            <div class="col-md-6">
-                                <ul>
-                                    <li>Git, GitHub</li>
-                                    <li>Responsive Design</li>
-                                    <li>RESTful APIs</li>
-                                    <li>User Experience Design</li>
-                                </ul>
+                            <p class="mb-1">Major in Information Science</p>
+                            <p class="text-muted mb-3">High School GPA (Weighted): 4.7</p>
+                            <div class="text-center">
+                                <img src="img/umd.png" alt="UMD Logo" class="img-fluid rounded-circle" style="height: 80px; width: 80px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skills -->
+                <div class="resume-section">
+                    <h3 class="mb-4">Skills</h3>
+                    <div class="card shadow-sm rounded-4 p-3">
+                        <div class="card-body">
+                            <h4 class="fs-5 mb-3">Technical Skills</h4>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge bg-primary">HTML</span>
+                                <span class="badge bg-primary">CSS</span>
+                                <span class="badge bg-primary">JavaScript</span>
+                                <span class="badge bg-secondary">Bootstrap</span>
+                                <span class="badge bg-secondary">jQuery</span>
+                                <span class="badge bg-secondary">Vue.js</span>
+                                <span class="badge bg-dark">GitHub</span>
+                                <span class="badge bg-warning text-dark">Responsive Design</span>
+                                <span class="badge bg-danger">UX Design</span>
+                                <span class="badge bg-danger">Graphic Design</span>
+                                <span class="badge bg-danger">Video Editing</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
-            <!-- Download Button -->
-            <div class="text-center mt-5">
-                <a href="#" class="btn btn-primary">Download Full Resume</a>
+
+            <!-- Right Column: Experience Timeline -->
+            <div class="col-lg-7 pt-4 pt-lg-0" data-aos="fade-left">
+                <div class="resume-section">
+                    <h3 class="mb-4">Experience</h3>
+                    <div class="timeline position-relative ps-4">
+                        <!-- Job 1 -->
+                        <div class="timeline-item mb-5 position-relative">
+                            <div class="timeline-dot bg-primary position-absolute start-0 translate-middle rounded-circle" style="width: 15px; height: 15px; top: 5px;"></div>
+                            <div class="card shadow-sm rounded-4 ms-4">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <h4 class="fs-5">Web Design Pathway Program</h4>
+                                        <span class="text-muted">2022 - 2025</span>
+                                    </div>
+                                    <p class="mb-1">Marlboro High School</p>
+                                    <ul class="mt-2 mb-0">
+                                        <li>Learned HTML, CSS, and JavaScript to create websites</li>
+                                        <li>Worked with clients to create sites that met the needs of their company</li>
+                                        <li>Learned Photoshop and several other Adobe software applications</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Job 2 -->
+                        <div class="timeline-item position-relative">
+                            <div class="timeline-dot bg-secondary position-absolute start-0 translate-middle rounded-circle" style="width: 15px; height: 15px; top: 5px;"></div>
+                            <div class="card shadow-sm rounded-4 ms-4">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <h4 class="fs-5">Coming soon!</h4>
+                                        <span class="text-muted">Unknown</span>
+                                    </div> 
+                                    <p class="mb-1">Future intern/program</p>
+                                    <ul class="mt-2 mb-0">
+                                        <li>I am off to college, so there will be a lot more opportunities I take and I will update them here!  </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- End of timeline -->
+                </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+<section id="highlights" class="py-5 bg-secondary text-white">
+    <div class="container">
+      <h2 class="mb-4 text-center" data-aos="fade-up">Highlights</h2>
+  
+      <div id="highlightsCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-aos="zoom-in">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="d-flex flex-column justify-content-center align-items-center text-center" style="min-height: 200px;">
+              <h4 class="mb-3">Driven by Curiosity</h4>
+              <p class="lead">Always exploring new tools, ideas, and approaches to grow and innovate.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex flex-column justify-content-center align-items-center text-center" style="min-height: 200px;">
+              <h4 class="mb-3">Team Player</h4>
+              <p class="lead">Believes in collaboration, open feedback, and shared success.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex flex-column justify-content-center align-items-center text-center" style="min-height: 200px;">
+              <h4 class="mb-3">Balanced & Focused</h4>
+              <p class="lead">Values both technical excellence and clear communication in every project.</p>
+            </div>
+          </div>
+        </div>
+  
+        <button class="carousel-control-prev" type="button" data-bs-target="#highlightsCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#highlightsCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
 
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
@@ -213,6 +248,10 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
   integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
   crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 <!-- This load the Vue.js code -->
 <script type="text/javascript" src="app.js"></script>
 </body>

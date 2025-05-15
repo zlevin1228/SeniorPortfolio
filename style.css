@@ -291,51 +291,41 @@ body.sidebar-expanded {
 .resume-card {
     background-color: #E03A3E;
     border: 5px solid #FFD520;
-    color: #FFD520
+    color: #FFD520;
+    border-radius: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.flip-box {
-    background-color: transparent;
-    width: 200px;
-    height: 200px;
-    border: 1px solid #f1f1f1;
-    border-radius: 20px;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
-  }
+.resume-card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+    transform: translateY(-8px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
   
-  /* This container is needed to position the front and back side */
-  .flip-box-inner {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
+  #resume h2, h3, h4 {
+    font-family: 'Poppins', sans-serif;
   }
-  
-  /* Do an horizontal flip when you move the mouse over the flip box container */
-  .flip-box:hover .flip-box-inner {
-    transform: rotateY(180deg);
-  }
-  
-  /* Position the front and back side */
-  .flip-box-front, .flip-box-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;
-  }
-  
-  /* Style the front side (fallback if image is missing) */
-  .flip-box-front {
-    background-color: #bbb;
-    color: black;
-  }
-  
-  /* Style the back side */
-  .flip-box-back {
-    background-color: dodgerblue;
-    color: white;
-    transform: rotateY(180deg);
+
+  .timeline {
+    border-left: 3px solid #dee2e6;
+    padding-left: 1rem;
+    position: relative;
+}
+
+.timeline-item {
+    position: relative;
+}
+
+.timeline-dot {
+    left: -8px;
+    top: 10px;
+    z-index: 1;
+}
+
+
+#highlights .carousel-inner {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    padding: 2rem;
   }
