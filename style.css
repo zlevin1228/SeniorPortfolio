@@ -1,10 +1,17 @@
 body {
     padding: 0;
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     scroll-behavior: smooth;
     transition: margin-left 0.3s ease;
     width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.index {
+    font-family: 'Roboto Flex', sans-serif;
 }
 
 body.sidebar-active {
@@ -304,7 +311,7 @@ body.sidebar-expanded {
 }
   
   #resume h2, h3, h4 {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Flex', sans-serif;
   }
 
   .timeline {
@@ -323,9 +330,224 @@ body.sidebar-expanded {
     z-index: 1;
 }
 
-
 #highlights .carousel-inner {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: #c8102e;
     border-radius: 1rem;
+    border: 2px solid #0038a8;
     padding: 2rem;
+  }
+
+.title {
+    font-family: "Bungee Shade", sans-serif;
+}
+
+.title2 {
+    font-family: "Monofett", monospace;
+}
+
+.title3 {
+    font-family: "Monofett", monospace;
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+    color: #fff;
+    padding: 1.5rem 0 1rem;
+    background-color: #111;
+    overflow: hidden;
+  }
+  
+  /* Hockey Rink Background */
+  .rink-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background: #fff;
+    opacity: 0.9;
+  }
+  
+  /* Center Ice Circle */
+  .center-circle {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border: 2px solid rgba(200, 16, 46, 0.5);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+  }
+  
+  /* Blue Lines */
+  .blue-line-left, .blue-line-right {
+    position: absolute;
+    height: 100%;
+    width: 4px;
+    background-color: rgba(0, 56, 168, 0.6);
+    top: 0;
+    z-index: 0;
+  }
+  
+  .blue-line-left {
+    left: 25%;
+  }
+  
+  .blue-line-right {
+    right: 25%;
+  }
+  
+  /* Red Line */
+  .center-line {
+    position: absolute;
+    height: 100%;
+    width: 4px;
+    background-color: rgba(200, 16, 46, 0.6);
+    left: 50%;
+    top: 0;
+    z-index: 0;
+  }
+  
+  /* Ice markings */
+  .ice-markings {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: 
+      radial-gradient(circle at 15% 50%, rgba(0, 0, 0, 0.05) 10px, transparent 10px),
+      radial-gradient(circle at 85% 50%, rgba(0, 0, 0, 0.05) 10px, transparent 10px),
+      radial-gradient(circle at 50% 50%, rgba(200, 16, 46, 0.1) 30px, transparent 30px);
+    z-index: 0;
+  }
+  
+  /* Ice Texture */
+  .ice-texture {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffffff' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E");
+    opacity: 0.6;
+    z-index: 0;
+  }
+  
+  /* Footer Content Container */
+  .footer-content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    z-index: 1;
+  }
+  
+  /* Footer Logo */
+  .footer-logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-right: 2rem;
+    color: #111;
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-logo span {
+    color: #c8102e; /* Hockey red */
+  }
+  
+  /* Footer Navigation */
+  .footer-nav {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .footer-nav a {
+    color: #111;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+    position: relative;
+  }
+  
+  .footer-nav a:hover {
+    color: #c8102e; /* Hockey red */
+  }
+  
+  .footer-nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #c8102e;
+    transition: width 0.3s ease;
+  }
+  
+  .footer-nav a:hover::after {
+    width: 100%;
+  }
+  
+  /* Social Icons */
+  .social-icons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .social-icon {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0038a8; /* Hockey blue */
+    color: #fff;
+    border-radius: 50%;
+    transition: background-color 0.2s ease;
+    text-decoration: none;
+  }
+  
+  .social-icon:hover {
+    background-color: #c8102e; /* Hockey red */
+  }
+  
+  /* Copyright Bar */
+  .copyright {
+    text-align: center;
+    padding: 0.8rem 1.5rem;
+    margin-top: 1rem;
+    color: #111;
+    font-size: 0.875rem;
+    position: relative;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 4px;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 56, 168, 0.2);
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      gap: 1rem;
+      text-align: center;
+    }
+    
+    .footer-logo {
+      margin-right: 0;
+      margin-bottom: 1rem;
+    }
+    
+    .footer-nav {
+      margin-bottom: 1rem;
+    }
   }
