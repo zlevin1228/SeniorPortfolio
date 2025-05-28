@@ -560,7 +560,7 @@ body.sidebar-expanded {
 }
 
 .project-grid {
-    background: rgba(0, 0, 0, 0.7);
+    background: #0038a8;
     border-radius: 20px;
     padding: 40px;
     backdrop-filter: blur(10px);
@@ -689,10 +689,10 @@ body.sidebar-expanded {
 
 .main-title {
     text-align: center;
-    color: white;
+    color: #c8102e;
     font-size: 3rem;
     font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    text-shadow: 2px 2px 4px #0038a870;
     margin-bottom: 50px;
 }
 

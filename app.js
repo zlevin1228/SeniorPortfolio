@@ -1,116 +1,116 @@
 // Project data
 const projects = [
     {
-        title: "E-Commerce Platform",
-        description: "Full-stack online shopping experience with payment integration",
-        tech: "Vue.js",
-        image: "/api/placeholder/300/200",
-        url: "https://github.com"
-    },
-    {
-        title: "Task Manager",
-        description: "Collaborative project management tool with real-time updates",
-        tech: "React",
-        image: "/api/placeholder/300/200",
-        url: "https://trello.com"
-    },
-    {
-        title: "Weather Dashboard",
-        description: "Interactive weather forecasting application with maps",
-        tech: "JS",
-        image: "/api/placeholder/300/200",
-        url: "https://weather.com"
-    },
-    {
-        title: "Portfolio Website",
-        description: "Responsive personal portfolio showcasing my work",
+        title: "Aquatic Animals",
+        description: "Learn about animals in the sea! (Year 1 Project)",
         tech: "HTML/CSS",
-        image: "/api/placeholder/300/200",
-        url: "https://codepen.io"
+        image: "img/aquarium.png",
+        url: "https://zlevin1228.github.io/Aquatic-Animals/"
     },
     {
-        title: "Chat Application",
-        description: "Real-time messaging platform with room functionality",
-        tech: "Socket.io",
-        image: "/api/placeholder/300/200",
-        url: "https://discord.com"
+        title: "How To Win The World Cup",
+        description: "Learn how to win the world cup! (Year 1 Project)",
+        tech: "HTML/CSS",
+        image: "img/worldcup.png",
+        url: "https://zlevin1228.github.io/How-To-Win-The-World-Cup/"
     },
     {
-        title: "Blog CMS",
-        description: "Content management system for blogging with admin panel",
-        tech: "Node.js",
-        image: "/api/placeholder/300/200",
-        url: "https://medium.com"
+        title: "Brand Designer",
+        description: "Made with Nick Guzzone, a tribute to Satoshi Tajiri & Game Freak (Year 1 Project)",
+        tech: "HTML/CSS/Bootstrap",
+        image: "img/pokemon.png",
+        url: "https://zlevin1228.github.io/Brand-Designer/"
     },
     {
-        title: "Fitness Tracker",
-        description: "Mobile-responsive app for tracking workouts and progress",
-        tech: "PWA",
-        image: "/api/placeholder/300/200",
-        url: "https://myfitnesspal.com"
+        title: "Vacation Destination",
+        description: "Learn about a potential trip to Monaco! (Year 1 Project)",
+        tech: "HTML/CSS/Bootstrap",
+        image: "img/monaco.png",
+        url: "https://zlevin1228.github.io/Vacation-Destination/"
     },
     {
-        title: "Recipe Finder",
-        description: "Search and save your favorite recipes with meal planning",
-        tech: "API",
-        image: "/api/placeholder/300/200",
-        url: "https://allrecipes.com"
+        title: "Mixtape Cafe",
+        description: "Check out me and Randy Kladerman's cafe! (Year 1 Project)",
+        tech: "HTML/CSS/Bootstrap",
+        image: "img/mixtape.png",
+        url: "https://zlevin1228.github.io/Coffee-Shop/"
     },
     {
-        title: "Budget Tracker",
-        description: "Personal finance management with expense categorization",
-        tech: "Chart.js",
-        image: "/api/placeholder/300/200",
-        url: "https://mint.com"
+        title: "Summertainment",
+        description: "Check out an experience from the summer of 2023! (Year 2 Project)",
+        tech: "HTML/CSS/Bootstrap",
+        image: "img/dontoliver.png",
+        url: "https://zlevin1228.github.io/Summertainment/"
     },
     {
-        title: "Learning Platform",
-        description: "Online course platform with progress tracking",
-        tech: "Vue.js",
-        image: "/api/placeholder/300/200",
-        url: "https://coursera.org"
+        title: "George Halas Tribute",
+        description: "Check out a tribute to Bears legend George Halas! (Year 2 Project)",
+        tech: "HTML/CSS/Bootstrap",
+        image: "img/halas.png",
+        url: "https://zlevin1228.github.io/Look-Ma-Im-Famous/"
     },
     {
-        title: "Social Media App",
-        description: "Mini social network with posts, likes, and comments",
-        tech: "MongoDB",
-        image: "/api/placeholder/300/200",
-        url: "https://twitter.com"
+        title: "On My Birthday",
+        description: "Check out some important events on my birthday! (Year 2 Project)",
+        tech: "JavaScript",
+        image: "img/birthday.png",
+        url: "https://zlevin1228.github.io/On-My-Birthday/"
     },
     {
-        title: "Game Center",
-        description: "Collection of browser-based mini-games and puzzles",
-        tech: "Canvas",
-        image: "/api/placeholder/300/200",
-        url: "https://chess.com"
+        title: "Rock, Paper, Scissors",
+        description: "Try out the classic game of Rock, Paper, Scissors! (Year 2 Project)",
+        tech: "Video Game",
+        image: "img/rps.png",
+        url: "https://zlevin1228.github.io/RPS/"
     },
     {
-        title: "Music Player",
-        description: "Streaming music player with playlist functionality",
-        tech: "Web Audio",
-        image: "/api/placeholder/300/200",
-        url: "https://spotify.com"
+        title: "Little Bird Toy Co.",
+        description: "With Randy Kladerman, our mock WBLP (Year 2 Project)",
+        tech: "CSS/JS",
+        image: "img/littlebird.png",
+        url: "https://rklad.github.io/little-bird-toy-co/"
     },
     {
-        title: "Photo Gallery",
-        description: "Image gallery with filters, search, and organization",
-        tech: "CSS Grid",
-        image: "/api/placeholder/300/200",
-        url: "https://unsplash.com"
+        title: "Monthly Website Gallery",
+        description: "My biggest websites from Year 2 put together onto one page",
+        tech: "HTML/CSS",
+        image: "img/monthly.png",
+        url: "https://zlevin1228.github.io/Gallery/"
     },
     {
-        title: "Event Planner",
-        description: "Organize and manage events with calendar integration",
-        tech: "Calendar",
-        image: "/api/placeholder/300/200",
-        url: "https://eventbrite.com"
+        title: "College Recruitment",
+        description: "Learn about the University of Virginia! (Year 3 Project)",
+        tech: "JavaScript/Bootstrap",
+        image: "img/uva.png",
+        url: "https://zlevin1228.github.io/College-Recruitment/"
     },
     {
-        title: "Code Editor",
-        description: "Browser-based code editor with syntax highlighting",
-        tech: "CodeMirror",
-        image: "/api/placeholder/300/200",
-        url: "https://replit.com"
+        title: "Trunk or Treat",
+        description: "Check out a website made for the 2024 Trunk or Treat! (Year 3 Project)",
+        tech: "jQuery",
+        image: "img/trunkortreat.png",
+        url: "https://zlevin1228.github.io/Trunk-Or-Treat/"
+    },
+    {
+        title: "My Top 10 Favorite Songs Of All Time",
+        description: "Check out my favorite songs ever! (Year 3 Project)",
+        tech: "jQuery/JSON",
+        image: "img/slideshow.png",
+        url: "https://zlevin1228.github.io/NJIT-Slideshow/"
+    },
+    {
+        title: "Web Design Program",
+        description: "A website about the Web Program, with Randy K, Issac E, Ayat S, Matt P, & Sophie H (Year 3 Project)",
+        tech: "JS/jQuery/Vue.js",
+        image: "img/wdpp.png",
+        url: "https://zlevin1228.github.io/WebDesign/"
+    },
+    {
+        title: "Seth A. Levin CPA",
+        description: "A website for my father's business, Seth A. Levin CPA. (Year 3 Project)",
+        tech: "Vue.js/PHP",
+        image: "img/sethalevincpa.png",
+        url: "https://www.sethalevincpa.com/"
     }
 ];
 
@@ -377,7 +377,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.getElementById('scrollButton').addEventListener('click', function () {
-    const target = document.getElementById('resume');
+    const target = document.getElementById('app');
     if (target) {
       target.scrollIntoView({ behavior: 'smooth' });
     }
