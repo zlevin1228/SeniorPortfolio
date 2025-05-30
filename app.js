@@ -382,3 +382,31 @@ document.getElementById('scrollButton').addEventListener('click', function () {
       target.scrollIntoView({ behavior: 'smooth' });
     }
   });
+
+  AOS.init({
+    duration: 800,
+    easing: 'ease-in-out',
+    once: true,
+    offset: 100
+});
+
+// Add some interactive hover effects
+document.querySelectorAll('.video-card').forEach(card => {
+    card.addEventListener('mouseenter', function() {
+        this.style.transform = 'translateY(-15px) scale(1.02)';
+    });
+    
+    card.addEventListener('mouseleave', function() {
+        this.style.transform = 'translateY(0) scale(1)';
+    });
+});
+
+// Optional: Add click-to-focus functionality
+document.querySelectorAll('.video-iframe').forEach(iframe => {
+    iframe.addEventListener('click', function() {
+        this.style.transform = 'scale(1.05)';
+        setTimeout(() => {
+            this.style.transform = 'scale(1)';
+        }, 200);
+    });
+});
