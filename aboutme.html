@@ -101,24 +101,63 @@
             </li>
         </ul>
     </div>
-
+<div class="aboutme">
     <div id="app">
       <div class="container">
-        <h1 class="main-title pt-5" data-aos="fade-down" data-aos-duration="1000">
+        <h1 class="main-title2 pt-5" data-aos="fade-down" data-aos-duration="1000">
           About Me
         </h1>
-        <div id="three-container" class="pt-3"></div>
-      </div>
-    </div>
+        <!-- Section 1: Image Left, Text Right -->
+        <div class="content-section" data-aos="fade-down" data-aos-duration="1000">
+            <div class="section-content">
+                <div class="image-content" style="background-image: url('img/asbury.jpeg');"></div>
+                <div class="text-content">
+                    <h2>My Name Is Zachary Levin</h2>
+                    <p>Every great story begins with a single step. My journey has been filled with incredible experiences that have shaped who I am today.</p>
+                    <p>From humble beginnings to where I stand now, each chapter has taught me valuable lessons about perseverance, creativity, and the importance of staying true to oneself.</p>
+                </div>
+            </div>
+        </div>
 
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
-    
-       <!-- JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.4.21/vue.global.prod.min.js"></script> 
-    <footer class="footer">
+        <!-- Section 2: Text Left, Image Right -->
+        <div class="content-section" data-aos="fade-down" data-aos-duration="1000">
+            <div class="section-content">
+                <div class="text-content right">
+                    <h2>My Story</h2>
+                    <p>I'm passionate about technology, creativity, and making meaningful connections with people from all walks of life.</p>
+                    <p>Whether it's exploring new technologies, diving into creative projects, or simply enjoying a good conversation over coffee, I find joy in the simple yet profound moments.</p>
+                </div>
+                <div class="image-content" style="background-image: url('img/stangs.jpeg');"></div>
+            </div>
+        </div>
+
+
+
+        <!-- Image Carousel -->
+        <div class="carousel-container">
+            <h2 class="carousel-title" data-aos="fade-down" data-aos-duration="800">A Journey Through Photos</h2>
+            <div class="carousel" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
+                <div class="carousel-wrapper" id="carouselWrapper" data-aos="fade-in" data-aos-delay="500">
+                    <div class="carousel-slide" style="background-image: url('img/lbi.jpeg');" data-aos="slide-right" data-aos-delay="700"></div>
+                    <div class="carousel-slide" style="background-image: url('img/family.jpeg');" data-aos="slide-left" data-aos-delay="900"></div>
+                    <div class="carousel-slide" style="background-image: url('img/banquet.jpeg');" data-aos="slide-up" data-aos-delay="1100"></div>
+                    <div class="carousel-slide" style="background-image: url('img/commitment.jpeg');" data-aos="slide-down" data-aos-delay="1300"></div>
+                    <div class="carousel-slide" style="background-image: url('img/eastbrunswick.jpeg');" data-aos="zoom-in" data-aos-delay="1500"></div>
+                </div>
+                <button class="carousel-nav carousel-prev" onclick="prevSlide()" data-aos="fade-right" data-aos-delay="1700">‹</button>
+                <button class="carousel-nav carousel-next" onclick="nextSlide()" data-aos="fade-left" data-aos-delay="1700">›</button>
+            </div>
+            <div class="carousel-dots" data-aos="fade-up" data-aos-delay="1900">
+                <span class="dot active" onclick="currentSlide(1)" data-aos="bounce-in" data-aos-delay="2000"></span>
+                <span class="dot" onclick="currentSlide(2)" data-aos="bounce-in" data-aos-delay="2100"></span>
+                <span class="dot" onclick="currentSlide(3)" data-aos="bounce-in" data-aos-delay="2200"></span>
+                <span class="dot" onclick="currentSlide(4)" data-aos="bounce-in" data-aos-delay="2300"></span>
+                <span class="dot" onclick="currentSlide(5)" data-aos="bounce-in" data-aos-delay="2400"></span>
+            </div>
+        </div>
+      </div>
+      </div>
+      <footer class="footer">
         <!-- Hockey Rink Background Elements -->
         <div class="rink-background"></div>
         <div class="blue-line-left"></div>
@@ -167,6 +206,16 @@
           &copy; 2025 Your Portfolio | Hockey-Inspired Design
         </div>
       </footer>
+    </div>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+    
+       <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.4.21/vue.global.prod.min.js"></script> 
+    
 <!-- Bootstrap JavaScript Libraries -->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
   integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
