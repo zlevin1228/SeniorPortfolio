@@ -246,6 +246,7 @@ body.sidebar-expanded {
 
 #home {
     background-color: transparent;
+    z-index: 2;
 }
 
 #projects {
@@ -1226,4 +1227,235 @@ body.sidebar-expanded {
     font-weight: bold;
     text-shadow: 2px 2px 4px #c8102e;
     margin-bottom: 50px;
+}
+
+.hockey-container {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80vmin;
+            height: 80vmin;
+            border-radius: 50%;
+            animation: rotate 20s linear infinite;
+        }
+
+        .hockey-emoji {
+            position: absolute;
+            font-size: 3rem;
+            animation: counter-rotate 20s linear infinite;
+        }
+
+        .hockey-emoji:nth-child(1) {
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .hockey-emoji:nth-child(2) {
+            top: 14.6%;
+            right: 14.6%;
+            transform: translate(50%, -50%);
+        }
+
+        .hockey-emoji:nth-child(3) {
+            top: 50%;
+            right: 0;
+            transform: translate(50%, -50%);
+        }
+
+        .hockey-emoji:nth-child(4) {
+            bottom: 14.6%;
+            right: 14.6%;
+            transform: translate(50%, 50%);
+        }
+
+        .hockey-emoji:nth-child(5) {
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 50%);
+        }
+
+        .hockey-emoji:nth-child(6) {
+            bottom: 14.6%;
+            left: 14.6%;
+            transform: translate(-50%, 50%);
+        }
+
+        .hockey-emoji:nth-child(7) {
+            top: 50%;
+            left: 0;
+            transform: translate(-50%, -50%);
+        }
+
+        .hockey-emoji:nth-child(8) {
+            top: 14.6%;
+            left: 14.6%;
+            transform: translate(-50%, -50%);
+        }
+
+        @keyframes rotate {
+            from {
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+            to {
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
+        }
+
+        @keyframes counter-rotate {
+            from {
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+            to {
+                transform: translate(-50%, -50%) rotate(-360deg);
+            }
+        }
+
+        /* Additional decorative circles */
+        .hockey-container-2 {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60vmin;
+            height: 60vmin;
+            border-radius: 50%;
+            animation: rotate 30s linear infinite reverse;
+        }
+
+        .hockey-container-2 .hockey-emoji {
+            font-size: 2.5rem;
+            animation: counter-rotate 30s linear infinite reverse;
+        }
+
+        .hockey-container-3 {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 40vmin;
+            height: 40vmin;
+            border-radius: 50%;
+            animation: rotate 15s linear infinite;
+        }
+
+        .hockey-container-3 .hockey-emoji {
+            font-size: 2rem;
+            animation: counter-rotate 15s linear infinite;
+        }
+
+        .hockey-container-4 {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100vmin;
+            height: 100vmin;
+            border-radius: 50%;
+            animation: rotate 25s linear infinite reverse;
+        }
+
+        .hockey-container-4 .hockey-emoji {
+            font-size: 3.5rem;
+            animation: counter-rotate 25s linear infinite reverse;
+        }
+
+        .hockey-container-5 {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 120vmin;
+            height: 120vmin;
+            border-radius: 50%;
+            animation: rotate 35s linear infinite;
+        }
+
+        .hockey-container-5 .hockey-emoji {
+            font-size: 4rem;
+            animation: counter-rotate 35s linear infinite;
+        }
+
+        .hockey-container-6 {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 140vmin;
+            height: 140vmin;
+            border-radius: 50%;
+            animation: rotate 45s linear infinite reverse;
+        }
+
+        .hockey-container-6 .hockey-emoji {
+            font-size: 4.5rem;
+            animation: counter-rotate 45s linear infinite reverse;
+        }
+
+        .hockey-container-7 {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 160vmin;
+            height: 160vmin;
+            border-radius: 50%;
+            animation: rotate 50s linear infinite;
+        }
+
+        .hockey-container-7 .hockey-emoji {
+            font-size: 5rem;
+            animation: counter-rotate 50s linear infinite;
+        }
+
+        .hockey-container-8 {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 180vmin;
+            height: 180vmin;
+            border-radius: 50%;
+            animation: rotate 55s linear infinite reverse;
+        }
+
+        .hockey-container-8 .hockey-emoji {
+            font-size: 5.5rem;
+            animation: counter-rotate 55s linear infinite reverse;
+        }
+
+        .hockey-container-9 {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 200vmin;
+            height: 200vmin;
+            border-radius: 50%;
+            animation: rotate 60s linear infinite;
+        }
+
+        .hockey-container-9 .hockey-emoji {
+            font-size: 6rem;
+            animation: counter-rotate 60s linear infinite;
+        }
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #c8102e;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0038a8;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0045ce;
 }
